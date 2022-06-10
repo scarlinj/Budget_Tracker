@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 // const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
@@ -44,11 +44,11 @@ const config = {
         $: 'jquery',
         jQuery: 'jquery'
       }),
-    //   new BundleAnalyzerPlugin({
-    //     analyzerMode: 'static'
-    //   }),
+      new BundleAnalyzerPlugin({
+        analyzerMode: 'static'
+      }),
       new WebpackPwaManifest({
-        name: "Budget_Tracking",
+        name: "Budget Tracking",
         short_name: "Budget",
         description: "An app that allows you to track your income and expenses.",
         start_url: "./public/index.html",
