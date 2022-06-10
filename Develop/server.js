@@ -18,11 +18,12 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// mongoose.connect(MONGODB_URI, || 'mongodb://localhost:27017/budget_tracker', {
-//   useNewUrlParser: true,
-//   useFindAndModify: false,
-//   useUnifiedTopology: true
-// });
+// is 27017 for Mongoose?
+mongoose.connect(MONGODB_URI || 'mongodb://localhost:27017/budget_tracker', {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true
+});
 
 // routes
 app.use(require("./routes/api.js"));
