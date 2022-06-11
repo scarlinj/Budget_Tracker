@@ -23,9 +23,9 @@ app.use(express.static("public"));
   process.env.MONGODB_URI || 'mongodb://localhost:27017/budget_tracker', {
   useNewUrlParser: true,
   useFindAndModify: false,
-  useUnifiedTopology: true
 };
 
+// removed from process.env above: useUnifiedTopology: true
 // routes
 // app.use(require("./routes/api.js"));
 // app.use("./routes/api");
