@@ -22,12 +22,12 @@ app.use(express.static("public"));
 mongoose.connect(MONGODB_URI || 'mongodb://localhost:27017/budget_tracker', {
   useNewUrlParser: true,
   // useFindAndModify: false,
-  useUnifiedTopology: true
+  // useUnifiedTopology: true
 });
 
 // routes
 // app.use(require("./Develop/routes/api"));
-app.use('/api', require('./Develop/routes/api.js');
+app.use('/api', require('./Develop/routes/api.js'));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
