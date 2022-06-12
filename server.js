@@ -1,5 +1,5 @@
 const express = require("express");
-// const logger = require("morgan");
+const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
@@ -8,7 +8,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/budget_track
 
 const app = express();
 
-// app.use(logger("dev"));
+app.use(logger("dev"));
 
 app.use(compression());
 app.use(express.urlencoded({
@@ -19,15 +19,24 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // is 27017 for Mongoose?
-mongoose.connect(MONGODB_URI || 'mongodb://localhost:27017/budget_tracker', {
+  // removed 27017 from localhost below
+mongoose.connect(MONGODB_URI || 'mongodb://localhost/budget_tracker', {
   useNewUrlParser: true,
-  // useFindAndModify: false,
-  // useUnifiedTopology: true
+  useFindAndModify: false,
 });
 
+
+// process.env.MONGODB_URI || 'mongodb://localhost/budget_tracker', {
+//   useNewUrlParser: true,
+//   useFindAndModify: false,
+// };
+// removed from process.env above: useUnifiedTopology: true
+
 // routes
-// app.use(require("./Develop/routes/api"));
-app.use('/api', require('./Develop/routes/api.js'));
+// app.use(require("./routes/api.js"));
+// app.use("./routes/api");
+app.use('/api', require('./routes/api'));
+
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
