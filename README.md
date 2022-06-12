@@ -1,9 +1,11 @@
-Welcome to the Budget Tracker!  Use this simple app to track your income and expenses in the cloud.  Add funds and subtract them as needed.
+Welcome to the Budget Tracker!  
+
+## About
+
+Use this simple app to track your income and expenses in the cloud.  Add funds and subtract them as needed.
 
 On the homepage, you will see a blank graph.  Type your expenses at the top and add to the database.  The website will save this to track your expenses.
 Try going offline!
-
-## About
 
 ## Features
 
@@ -11,7 +13,7 @@ Try going offline!
 Input an amount to add or subtract and click the appropriate button.  This will log that income or expense and then adjust the total balance appropriately.
 You can use this app online or offline, in case you get disconnected from the internet.
 
-[See the screenshote for a demonstration of this app.](images/Budget_screenshot_1.JPG)
+[See the screenshot for a demonstration of this app.](images/Budget_screenshot_1.JPG)
 
 ## Installation
 
