@@ -13,7 +13,7 @@ Try going offline!
 Input an amount to add or subtract and click the appropriate button.  This will log that income or expense and then adjust the total balance appropriately.
 You can use this app online or offline, in case you get disconnected from the internet.
 
-[See the screenshot for a demonstration of this app.](images/Budget_screenshot_1.JPG)
+![Screenshot of the budget tracker page](./images/Budget_screenshot_1.JPG)
 
 ## Installation
 
