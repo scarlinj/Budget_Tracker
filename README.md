@@ -1,4 +1,4 @@
-Welcome to the Budget Tracker!  
+Welcome to the Budget Tracker!  Visit [here](https://intense-eyrie-26187.herokuapp.com/) to load the website.
 
 ## About
 
@@ -17,7 +17,7 @@ You can use this app online or offline, in case you get disconnected from the in
 
 ## Installation
 
-Open this app in https://intense-eyrie-26187.herokuapp.com/
+Open the app in https://intense-eyrie-26187.herokuapp.com/
 
 You can also install this locally by cloning the repository here.  Then run the appropriate npm commands:
 - git clone 
